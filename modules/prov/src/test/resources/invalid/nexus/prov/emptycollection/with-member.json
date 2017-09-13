@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "@vocab": "http://www.w3.org/ns/prov#",
+    "entity": "{{base}}/data/nexus/prov/entity/v0.1.0/"
+  },
+  "@type": "EmptyCollection",
+  "hadMember": [
+    {
+      "@type": "Entity",
+      "@id": "entity:f53b8016-6e30-4e17-a290-773c48775eda"
+    }
+  ]
+}

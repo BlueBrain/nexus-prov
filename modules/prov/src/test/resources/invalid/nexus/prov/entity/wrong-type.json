@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": "prov:wrongType",
+  "description": "a description",
+  "name": "a name"
+}
