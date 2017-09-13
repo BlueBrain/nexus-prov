@@ -27,5 +27,10 @@ sbt
 ```
 test
 ```
-All valid data defined in prov/test/resources/data/{org}/{domain}/{schemaname}/* will be checked for validation success with respect to their corresponding schemas defined in prov/src/main/resources/schemas/{org}/{domain}/{schemaname}/*.
-On the opposite all invalid data defined in prov/test/resources/invalid/{org}/{domain}/{schemaname}/* will be checked for validation failure with respect to their corresponding schemas defined in prov/src/main/resources/schemas/{org}/{domain}/{schemaname}/*.
+
+All valid data defined in **prov/test/resources/data/{org}/{domain}/{schemaname}/*** will be checked for validation success with respect to their corresponding schemas defined in **prov/src/main/resources/schemas/{org}/{domain}/{schemaname}/***.
+On the opposite all invalid data defined in **prov/test/resources/invalid/{org}/{domain}/{schemaname}/*** will be checked for validation failure with respect to their corresponding schemas defined in **prov/src/main/resources/schemas/{org}/{domain}/{schemaname}/***.
+
+### License
+
+The license for all codes in this repository is [Apache 2] (https://github.com/BlueBrain/nexus-prov/blob/master/LICENSE) while the license for all schemas and data is [CC-BY-4.0](https://github.com/BlueBrain/nexus-prov/blob/master/modules/prov/src/main/resources/LICENSE)
