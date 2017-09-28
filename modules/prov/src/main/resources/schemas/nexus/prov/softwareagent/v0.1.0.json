@@ -126,12 +126,12 @@
     "this": "{{base}}/schemas/nexus/prov/softwareagent/v0.1.0/shapes/"
   },
   "@type": "owl:Ontology",
-  "targetClass": "prov:SoftwareAgent",
   "shapes": [
     {
       "@id": "this:SoftwareAgentShape",
       "@type": "sh:NodeShape",
       "description": "A software agent is running software.",
+      "targetClass": "prov:SoftwareAgent",
       "nodeKind": "sh:BlankNodeOrIRI"
     }
   ]
