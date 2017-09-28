@@ -1,7 +1,7 @@
 import sbtrelease._
 import sbtrelease.ReleaseStateTransformations._
 
-val commonsVersion = "0.4.3-SNAPSHOT"
+val commonsVersion = "0.4.3"
 val scalaTestVersion = "3.0.4"
 val akkaHttpVersion = "10.0.9"
 
@@ -72,7 +72,7 @@ lazy val buildInfoSettings = Seq(
 lazy val commonSettings = Seq(
   organization := "ch.epfl.bluebrain.nexus",
   scalaVersion := "2.12.3",
-  resolvers    += Resolver.bintrayRepo("bogdanromanx", "maven"),
+  resolvers += Resolver.bintrayRepo("bogdanromanx", "maven"),
   scalacOptions ++= Seq(
     "-deprecation",
     "-encoding", "UTF-8",
