@@ -3,7 +3,8 @@
     "@vocab": "http://schema.org/",
     "prov": "http://www.w3.org/ns/prov#"
   },
-  "@type": "prov:wrongType",
+  "@id": "{{base}}/schemas/nexus/prov/entity/v0.1.0/da74a7ff-2560-40f6-9072-d591439eaaef",
+  "@type": "prov:Entity",
   "description": "a description",
   "name": "a name"
 }
