@@ -3,6 +3,6 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "@type": [
-    "prov:wrongType"
+    "prov:Agent"
   ]
 }
