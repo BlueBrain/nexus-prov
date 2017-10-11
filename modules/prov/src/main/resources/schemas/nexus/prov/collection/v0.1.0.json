@@ -19,7 +19,7 @@
         {
           "path": "prov:hadMember",
           "name": "Members",
-          "description": "The (prov) entities that constitutes the collection. At least one prov:Entity should be provided.",
+          "description": "The (prov) entities that constitute the collection. At least one prov:Entity should be provided.",
           "class": "prov:Entity",
           "nodeKind": "sh:IRI",
           "minCount": 1
