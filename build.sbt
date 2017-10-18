@@ -7,7 +7,7 @@ lazy val prov = project
     moduleName := "nexus-prov",
     resolvers += Resolver.bintrayRepo("bogdanromanx", "maven"),
     autoScalaLibrary := false,
-    workbenchVersion := "0.1.3"
+    workbenchVersion := "0.1.4"
   )
 
 lazy val root = project
