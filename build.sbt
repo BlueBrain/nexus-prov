@@ -1,7 +1,7 @@
 lazy val prov = project
   .in(file("modules/prov"))
   .enablePlugins(WorkbenchPlugin)
-  .disablePlugins(ScapegoatSbtPlugin)
+  .disablePlugins(ScapegoatSbtPlugin, DocumentationPlugin)
   .settings(
     name := "nexus-prov",
     moduleName := "nexus-prov",
