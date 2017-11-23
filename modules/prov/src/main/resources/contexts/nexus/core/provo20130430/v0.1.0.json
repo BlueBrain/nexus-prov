@@ -1,0 +1,25 @@
+{
+  "@context": [
+    "{{base}}/contexts/nexus/core/standards/v0.1.0",
+    {
+      "generated": {
+        "@id": "prov:generated"
+      },
+      "used": {
+        "@id": "prov:used"
+      },
+      "qualifiedGeneration": {
+        "@id": "prov:qualifiedGeneration"
+      },
+      "wasRevisionOf": {
+        "@id": "prov:wasRevisionOf"
+      },
+      "hadMember": {
+        "@id": "prov:hadMember"
+      },
+      "wasGeneratedBy": {
+        "@id": "prov:wasGeneratedBy"
+      }
+    }
+  ]
+}
