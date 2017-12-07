@@ -19,6 +19,21 @@
       },
       "wasGeneratedBy": {
         "@id": "prov:wasGeneratedBy"
+      },
+      "wasStartedBy": {
+        "@id": "prov:wasStartedBy"
+      },
+      "wasAssociatedWith": {
+        "@id": "prov:wasAssociatedWith"
+      },
+      "qualifiedAssociation": {
+        "@id": "prov:qualifiedAssociation"
+      },
+      "qualifiedUsage": {
+        "@id": "prov:qualifiedUsage"
+      },
+      "hadRole": {
+        "@id": "prov:hadRole"
       }
     }
   ]
