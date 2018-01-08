@@ -1,6 +1,6 @@
 import sbt.ModuleID
 
-val commonsVersion         = "0.5.20"
+val commonsVersion         = "0.5.23"
 
 lazy val commonSchemas = nexusDep("commons-schemas", commonsVersion)
 
