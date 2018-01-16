@@ -34,7 +34,10 @@
       },
       "hadRole": {
         "@id": "prov:hadRole"
-      }
+      },
+      "activity": {
+        "@id": "prov:activity",
+     }
     }
   ]
 }
