@@ -1,35 +1,38 @@
-import sbt.ModuleID
+val commonsVersion = "0.5.30"
 
-val commonsVersion         = "0.5.24"
-
-lazy val commonSchemas = nexusDep("commons-schemas", commonsVersion)
+lazy val commonSchemas = "ch.epfl.bluebrain.nexus" %% "commons-schemas" % commonsVersion
 
 lazy val prov = project
   .in(file("modules/prov"))
   .enablePlugins(WorkbenchPlugin)
   .disablePlugins(ScapegoatSbtPlugin, DocumentationPlugin)
+  .settings(common)
   .settings(
-    name := "nexus-prov",
-    moduleName := "nexus-prov",
-    resolvers += Resolver.bintrayRepo("bogdanromanx", "maven"),
-    autoScalaLibrary := false,
-    workbenchVersion := "0.2.0",
+    name                := "nexus-prov",
+    moduleName          := "nexus-prov",
+    autoScalaLibrary    := false,
+    workbenchVersion    := "0.2.2",
     libraryDependencies += commonSchemas
   )
 
 lazy val root = project
   .in(file("."))
-  .settings(noPublish)
+  .settings(common, noPublish)
   .aggregate(prov)
 
 lazy val noPublish = Seq(
-  publishLocal := {},
-  publish := {},
+  publishLocal    := {},
+  publish         := {},
   publishArtifact := false
 )
 
-def nexusDep(name: String, version: String): ModuleID =
-  "ch.epfl.bluebrain.nexus" %% name % version
+lazy val common = Seq(
+  bintrayOmitLicense := true,
+  homepage           := Some(url("https://github.com/BlueBrain/nexus-prov")),
+  licenses           := Seq("CC-4.0" -> url("https://github.com/BlueBrain/nexus-prov/blob/master/LICENSE")),
+  scmInfo := Some(
+    ScmInfo(url("https://github.com/BlueBrain/nexus-prov"), "scm:git:git@github.com:BlueBrain/nexus-prov.git"))
+)
 
 addCommandAlias("review", ";clean;test")
 addCommandAlias("rel", ";release with-defaults skip-tests")
