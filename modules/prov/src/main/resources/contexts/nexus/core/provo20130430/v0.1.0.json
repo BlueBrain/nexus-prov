@@ -36,7 +36,7 @@
         "@id": "prov:hadRole"
       },
       "activity": {
-        "@id": "prov:activity",
+        "@id": "prov:activity"
      }
     }
   ]
