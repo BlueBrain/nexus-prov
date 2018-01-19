@@ -37,7 +37,13 @@
       },
       "activity": {
         "@id": "prov:activity"
-     }
+     },
+      "entity": {
+        "@id": "prov:entity"
+      },
+      "agent": {
+        "@id": "prov:agent"
+      }
     }
   ]
 }
