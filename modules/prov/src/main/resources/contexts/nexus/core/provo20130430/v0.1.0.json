@@ -1,49 +1,56 @@
 {
-  "@context": [
-    "{{base}}/contexts/nexus/core/standards/v0.1.0",
-    {
-      "generated": {
-        "@id": "prov:generated"
-      },
-      "used": {
-        "@id": "prov:used"
-      },
-      "qualifiedGeneration": {
-        "@id": "prov:qualifiedGeneration"
-      },
-      "wasRevisionOf": {
-        "@id": "prov:wasRevisionOf"
-      },
-      "hadMember": {
-        "@id": "prov:hadMember"
-      },
-      "wasGeneratedBy": {
-        "@id": "prov:wasGeneratedBy"
-      },
-      "wasStartedBy": {
-        "@id": "prov:wasStartedBy"
-      },
-      "wasAssociatedWith": {
-        "@id": "prov:wasAssociatedWith"
-      },
-      "qualifiedAssociation": {
-        "@id": "prov:qualifiedAssociation"
-      },
-      "qualifiedUsage": {
-        "@id": "prov:qualifiedUsage"
-      },
-      "hadRole": {
-        "@id": "prov:hadRole"
-      },
-      "activity": {
-        "@id": "prov:activity"
-     },
-      "entity": {
-        "@id": "prov:entity"
-      },
-      "agent": {
-        "@id": "prov:agent"
-      }
+  "@context": {
+    "prov": "http://www.w3.org/ns/prov#",
+    "generated": {
+      "@id": "prov:generated"
+    },
+    "used": {
+      "@id": "prov:used"
+    },
+    "qualifiedGeneration": {
+      "@id": "prov:qualifiedGeneration"
+    },
+    "wasRevisionOf": {
+      "@id": "prov:wasRevisionOf"
+    },
+    "hadMember": {
+      "@id": "prov:hadMember"
+    },
+    "wasGeneratedBy": {
+      "@id": "prov:wasGeneratedBy"
+    },
+    "wasStartedBy": {
+      "@id": "prov:wasStartedBy"
+    },
+    "wasAssociatedWith": {
+      "@id": "prov:wasAssociatedWith"
+    },
+    "qualifiedAssociation": {
+      "@id": "prov:qualifiedAssociation"
+    },
+    "qualifiedUsage": {
+      "@id": "prov:qualifiedUsage"
+    },
+    "hadRole": {
+      "@id": "prov:hadRole"
+    },
+    "activity": {
+      "@id": "prov:activity"
+    },
+    "hadActivity": {
+      "@id": "prov:hadActivity"
+    },
+    "entity": {
+      "@id": "prov:entity"
+    },
+    "agent": {
+      "@id": "prov:agent"
+    },
+    "Derivation": {
+      "@id": "prov:Derivation"
+    },
+    "Generation": {
+      "@id": "prov:Generation"
     }
-  ]
+  }
 }
