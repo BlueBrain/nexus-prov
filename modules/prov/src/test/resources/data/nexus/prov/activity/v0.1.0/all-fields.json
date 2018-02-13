@@ -35,10 +35,10 @@
       "@id": "{{base}}/data/bbp/core/agent/v0.1.0/2d16451c-6661-4b9a-aa7b-e4804386f577"
     }
   ],
-  "qualifiedAssociation": [
+  "prov:qualifiedAssociation": [
     {
       "@type": "prov:Association",
-      "prov:agent": {
+      "agent": {
         "@type": "prov:Agent",
         "@id": "{{base}}/data/bbp/core/agent/v0.1.0/1c4d3683-dcfc-489f-adbb-5de815b1b89a"
       },

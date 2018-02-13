@@ -1,14 +1,14 @@
 {
   "@context": [
-    "{{base}}/contexts/nexus/core/schema/v0.1.0",
+    "{{base}}/contexts/nexus/core/schema/v0.2.0",
     {
-      "this": "{{base}}/schemas/nexus/prov/softwareagent/v0.1.0/shapes/"
+      "@base": "{{base}}/schemas/nexus/prov/softwareagent/v0.1.0/shapes/"
     }
   ],
   "@type": "nxv:Schema",
   "shapes": [
     {
-      "@id": "this:SoftwareAgentShape",
+      "@id": "SoftwareAgentShape",
       "@type": "sh:NodeShape",
       "label": "Software agent shape",
       "comment": "A software agent is a running software.",

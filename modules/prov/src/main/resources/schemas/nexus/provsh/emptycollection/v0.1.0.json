@@ -2,22 +2,25 @@
   "@context": [
     "{{base}}/contexts/nexus/core/schema/v0.2.0",
     {
-      "@base": "{{base}}/schemas/nexus/prov/emptycollection/v0.1.0/shapes/"
+      "@base": "{{base}}/schemas/nexus/provsh/emptycollection/v0.1.0/shapes/"
     }
   ],
   "@type": "nxv:Schema",
-  "imports":[
-    "{{base}}/schemas/nexus/provsh/emptycollection/v0.1.0"
-  ],
   "shapes": [
     {
       "@id": "EmptyCollectionShape",
       "@type": "sh:NodeShape",
       "label": "Empty collection shape",
       "comment": "An empty collection is a collection without members.",
-      "targetClass": "prov:EmptyCollection",
       "nodeKind": "sh:BlankNodeOrIRI",
-      "node": "{{base}}/schemas/nexus/provsh/emptycollection/v0.1.0/shapes/EmptyCollectionShape"
+      "property": [
+        {
+          "path": "prov:hadMember",
+          "description": "No member is allowed in an EmptyCollection.",
+          "name": "Members",
+          "maxCount": 0
+        }
+      ]
     }
   ]
 }

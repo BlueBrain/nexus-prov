@@ -47,3 +47,7 @@ target/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Protege generated files #
+######################
+*.xml

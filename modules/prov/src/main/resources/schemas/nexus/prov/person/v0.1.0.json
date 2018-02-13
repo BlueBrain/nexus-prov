@@ -1,14 +1,14 @@
 {
   "@context": [
-    "{{base}}/contexts/nexus/core/schema/v0.1.0",
+    "{{base}}/contexts/nexus/core/schema/v0.2.0",
     {
-      "this": "{{base}}/schemas/nexus/prov/person/v0.1.0/shapes/"
+      "@base": "{{base}}/schemas/nexus/prov/person/v0.1.0/shapes/"
     }
   ],
   "@type": "nxv:Schema",
   "shapes": [
     {
-      "@id": "this:PersonShape",
+      "@id": "PersonShape",
       "@type": "sh:NodeShape",
       "label": "Person shape",
       "comment": "Person agents are people.",
