@@ -39,7 +39,6 @@ lazy val noPublish = Seq(
 lazy val common = Seq(
   scalacOptions in (Compile, console) ~= (_ filterNot (_ == "-Xfatal-warnings")),
   autoScalaLibrary   := false,
-  workbenchVersion   := "0.2.2",
   bintrayOmitLicense := true,
   homepage           := Some(url("https://github.com/BlueBrain/nexus-prov")),
   licenses           := Seq("CC-4.0" -> url("https://github.com/BlueBrain/nexus-prov/blob/master/LICENSE")),
