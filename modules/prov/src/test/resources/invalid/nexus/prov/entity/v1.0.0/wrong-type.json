@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@id": "{{base}}/schemas/nexus/prov/entity/v1.0.0/da74a7ff-2560-40f6-9072-d591439eaaef",
+  "@type": "prov:wrongType",
+  "description": "a description",
+  "name": "a name"
+}

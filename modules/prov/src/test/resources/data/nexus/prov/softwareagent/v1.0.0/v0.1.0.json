@@ -1,0 +1,12 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": [
+    "prov:SoftwareAgent"
+  ],
+  "@id": "{{base}}/data/prov/softwareagent/v1.0.0/373b4581-cc5c-4a1e-af61-06d5e72fb125",
+  "name": "software name",
+  "softwareVersion": "2.3.0"
+}

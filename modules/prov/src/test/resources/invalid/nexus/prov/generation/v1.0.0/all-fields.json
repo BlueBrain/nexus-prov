@@ -1,0 +1,11 @@
+{
+  "@context": {
+    "@vocab": "http://www.w3.org/ns/prov#"
+  },
+  "@type": "wrongType",
+  "atTime": "2011-07-14T04:00:00-05:00",
+  "activity": {
+    "@type": "Activity",
+    "@id": "{{base}}/schemas/nexus/prov/activity/v1.0.0/3ee4bf2a-c8d0-4f10-b3b3-46b7151b4ea0"
+  }
+}

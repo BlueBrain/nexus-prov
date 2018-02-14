@@ -1,0 +1,7 @@
+{
+  "@context": {
+    "@vocab": "http://www.w3.org/ns/prov#",
+    "entity": "{{base}}/data/nexus/prov/entity/v1.0.0/"
+  },
+  "@type": "EmptyCollection"
+}

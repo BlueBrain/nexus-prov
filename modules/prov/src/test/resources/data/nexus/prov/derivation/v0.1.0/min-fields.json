@@ -1,9 +1,0 @@
-{
-  "@context": "{{base}}/contexts/nexus/core/provo20130430/v0.1.0",
-  "@type": "prov:Derivation",
-  "@id": "{{base}}/schemas/nexus/prov/derivation/v0.1.0/3ae4bf2a-c8d0-4f10-b3b3-46b7151b4ea0",
-  "entity": {
-    "@type": "prov:Entity",
-    "@id": "{{base}}/schemas/nexus/prov/entity/v0.1.0/5ae4bf2a-c8d0-4f10-b3b3-46b7151b4ea0"
-  }
-}

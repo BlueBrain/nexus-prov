@@ -1,0 +1,23 @@
+{
+  "@context": [
+    "{{base}}/contexts/nexus/core/schema/v0.2.0",
+    {
+      "@base": "{{base}}/schemas/nexus/prov/agent/v1.0.0/shapes/"
+    }
+  ],
+  "@type": "nxv:Schema",
+  "imports":[
+    "{{base}}/schemas/nexus/provsh/agent/v1.0.0"
+  ],
+  "shapes": [
+    {
+      "@id": "Agent",
+      "@type": "sh:NodeShape",
+      "label": "Agent shape",
+      "comment": "An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity.",
+      "targetClass": "prov:Agent",
+      "nodeKind": "sh:BlankNodeOrIRI",
+      "node": "{{base}}/schemas/nexus/provsh/agent/v1.0.0/shapes/AgentShape"
+    }
+  ]
+}

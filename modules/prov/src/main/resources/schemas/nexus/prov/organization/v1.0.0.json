@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "{{base}}/contexts/nexus/core/schema/v0.2.0",
+    {
+      "@base": "{{base}}/schemas/nexus/prov/organization/v1.0.0/shapes/"
+    }
+  ],
+  "@type": "nxv:Schema",
+  "shapes": [
+    {
+      "@id": "Organization",
+      "@type": "sh:NodeShape",
+      "label": "Organization shape",
+      "comment": "An organization is a social or legal institution such as a company, society, etc.",
+      "targetClass": "prov:Organization",
+      "nodeKind": "sh:BlankNodeOrIRI"
+    }
+  ]
+}
