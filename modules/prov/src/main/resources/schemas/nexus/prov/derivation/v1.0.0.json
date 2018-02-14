@@ -1,0 +1,23 @@
+{
+  "@context": [
+    "{{base}}/contexts/nexus/core/schema/v0.2.0",
+    {
+      "@base": "{{base}}/schemas/nexus/prov/derivation/v1.0.0/shapes/"
+    }
+  ],
+  "@type": "nxv:Schema",
+  "imports":[
+    "{{base}}/schemas/nexus/provsh/derivation/v1.0.0"
+  ],
+  "shapes": [
+    {
+      "@id": "DerivationShape",
+      "@type": "sh:NodeShape",
+      "label": "Entity derivation shape",
+      "comment": "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.",
+      "targetClass": "prov:Derivation",
+      "nodeKind": "sh:BlankNodeOrIRI",
+      "node": "{{base}}/schemas/nexus/provsh/derivation/v1.0.0/shapes/DerivationShape"
+    }
+  ]
+}

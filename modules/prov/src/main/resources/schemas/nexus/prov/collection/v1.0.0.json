@@ -1,0 +1,24 @@
+{
+  "@context": [
+    "{{base}}/contexts/nexus/core/schema/v0.2.0",
+    {
+      "@base": "{{base}}/schemas/nexus/prov/collection/v1.0.0/shapes/"
+    }
+  ],
+  "@type": "nxv:Schema",
+  "imports":[
+    "{{base}}/schemas/nexus/provsh/collection/v1.0.0"
+  ],
+  "shapes": [
+    {
+      "@id": "CollectionShape",
+      "@type": "sh:NodeShape",
+      "label": "Entity collection shape",
+      "comment": "A collection is an entity that provides a structure to some constituents, which are themselves entities. These constituents are said to be member of the collections.",
+      "targetClass": "prov:Collection",
+      "nodeKind": "sh:BlankNodeOrIRI",
+      "node": "{{base}}/schemas/nexus/provsh/collection/v1.0.0/shapes/CollectionShape"
+
+    }
+  ]
+}

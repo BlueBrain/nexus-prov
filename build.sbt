@@ -1,4 +1,4 @@
-val commonsVersion = "0.5.30"
+val commonsVersion = "0.7.5"
 
 lazy val commonSchemas = "ch.epfl.bluebrain.nexus" %% "commons-schemas" % commonsVersion
 
@@ -6,19 +6,29 @@ lazy val prov = project
   .in(file("modules/prov"))
   .enablePlugins(WorkbenchPlugin)
   .disablePlugins(ScapegoatSbtPlugin, DocumentationPlugin)
+  .dependsOn(provshapes)
   .settings(common)
   .settings(
     name                := "nexus-prov",
-    moduleName          := "nexus-prov",
-    autoScalaLibrary    := false,
-    workbenchVersion    := "0.2.2",
+    moduleName          := "nexus-prov"
+  )
+
+lazy val provshapes = project
+  .in(file("modules/provsh"))
+  .enablePlugins(WorkbenchPlugin)
+  .disablePlugins(ScapegoatSbtPlugin, DocumentationPlugin)
+  .settings(common)
+  .settings(
+    name                := "nexus-prov-shapes",
+    moduleName          := "nexus-prov-shapes",
     libraryDependencies += commonSchemas
   )
+
 
 lazy val root = project
   .in(file("."))
   .settings(common, noPublish)
-  .aggregate(prov)
+  .aggregate(prov,provshapes)
 
 lazy val noPublish = Seq(
   publishLocal    := {},
@@ -27,6 +37,9 @@ lazy val noPublish = Seq(
 )
 
 lazy val common = Seq(
+  scalacOptions in (Compile, console) ~= (_ filterNot (_ == "-Xfatal-warnings")),
+  autoScalaLibrary   := false,
+  workbenchVersion   := "0.2.2",
   bintrayOmitLicense := true,
   homepage           := Some(url("https://github.com/BlueBrain/nexus-prov")),
   licenses           := Seq("CC-4.0" -> url("https://github.com/BlueBrain/nexus-prov/blob/master/LICENSE")),

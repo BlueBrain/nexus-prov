@@ -1,0 +1,19 @@
+{
+  "@context": [
+    "{{base}}/contexts/nexus/core/schema/v0.2.0",
+    {
+      "@base": "{{base}}/schemas/nexus/prov/softwareagent/v1.0.0/shapes/"
+    }
+  ],
+  "@type": "nxv:Schema",
+  "shapes": [
+    {
+      "@id": "SoftwareAgentShape",
+      "@type": "sh:NodeShape",
+      "label": "Software agent shape",
+      "comment": "A software agent is a running software.",
+      "targetClass": "prov:SoftwareAgent",
+      "nodeKind": "sh:BlankNodeOrIRI"
+    }
+  ]
+}

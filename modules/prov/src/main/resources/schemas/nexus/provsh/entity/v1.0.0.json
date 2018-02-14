@@ -1,0 +1,18 @@
+{
+  "@context": [
+    "{{base}}/contexts/nexus/core/schema/v0.2.0",
+    {
+      "@base": "{{base}}/schemas/nexus/provsh/entity/v1.0.0/shapes/"
+    }
+  ],
+  "@type": "nxv:Schema",
+  "shapes": [
+    {
+      "@id": "EntityShape",
+      "@type": "sh:NodeShape",
+      "label": "Entity shape",
+      "comment": "An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary.",
+      "nodeKind": "sh:BlankNodeOrIRI"
+    }
+  ]
+}
