@@ -39,6 +39,8 @@ lazy val noPublish = Seq(
 lazy val common = Seq(
   scalacOptions in (Compile, console) ~= (_ filterNot (_ == "-Xfatal-warnings")),
   autoScalaLibrary   := false,
+  workbenchVersion   := "0.3.0",
+  resolvers += Resolver.bintrayRepo("bogdanromanx", "maven"), // required until sbt-bintray is released
   bintrayOmitLicense := true,
   homepage           := Some(url("https://github.com/BlueBrain/nexus-prov")),
   licenses           := Seq("CC-4.0" -> url("https://github.com/BlueBrain/nexus-prov/blob/master/LICENSE")),
