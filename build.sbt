@@ -40,7 +40,7 @@ inThisBuild(
     resolvers          += Resolver.bintrayRepo("bogdanromanx", "maven"),
     bintrayOmitLicense := true,
     homepage           := Some(url("https://github.com/BlueBrain/nexus-prov")),
-    licenses           := Seq("CC-4.0" -> url("https://github.com/BlueBrain/nexus-prov/blob/master/LICENSE")),
+    licenses           := Seq("Attribution" -> url("https://github.com/BlueBrain/nexus-prov/blob/master/LICENSE")),
     scmInfo := Some(
       ScmInfo(url("https://github.com/BlueBrain/nexus-prov"), "scm:git:git@github.com:BlueBrain/nexus-prov.git")),
     developers := List(Developer("MFSY", "Mohameth François Sy", "noreply@epfl.ch", url("https://bluebrain.epfl.ch/"))),
