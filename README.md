@@ -34,3 +34,9 @@ On the opposite all invalid data defined in **prov/test/resources/invalid/{org}/
 ### License
 
 The license for all codes in this repository is [Apache 2](https://github.com/BlueBrain/nexus-prov/blob/master/LICENSE) while the license for all schemas and data is [CC-BY-4.0](https://github.com/BlueBrain/nexus-prov/blob/master/modules/prov/src/main/resources/LICENSE)
+
+### Funding and Acknowledgements
+
+The development of this project was supported by funding to the Blue Brain Project, a research center of the École polytechnique fédérale de Lausanne (EPFL), from the Swiss government’s ETH Board of the Swiss Federal Institutes of Technology.
+
+Copyright © 2015-2021 Blue Brain Project/EPFL
