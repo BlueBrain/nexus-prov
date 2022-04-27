@@ -39,4 +39,4 @@ The license for all codes in this repository is [Apache 2](https://github.com/Bl
 
 The development of this project was supported by funding to the Blue Brain Project, a research center of the École polytechnique fédérale de Lausanne (EPFL), from the Swiss government’s ETH Board of the Swiss Federal Institutes of Technology.
 
-Copyright © 2017-2021 Blue Brain Project/EPFL
+Copyright © 2017-2022 Blue Brain Project/EPFL
